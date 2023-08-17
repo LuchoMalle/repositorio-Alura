@@ -1,0 +1,4 @@
+Seleccione solamente los inmuebles clasificados con tipo 'Departamento'
+Seleccione los inmuebles clasificados con tipos 'Casa', 'Casa en condominio' y 'Casa de villa'
+Seleccione los inmuebles con área entre 60 y 100 metros cuadrados, incluyendo los limites
+Seleccione los inmuebles que tengan por lo menos 4 cuartos y alquiler menor que $2.000,00

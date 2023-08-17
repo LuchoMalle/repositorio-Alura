@@ -1,0 +1,31 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var pantalla = document.querySelector('canvas');
+    var pincel = pantalla.getContext('2d');
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    var xCuadrado = 275;
+    var yCuadrado = 150;
+    var base = 50;
+    var altura = 50;
+
+    pincel.fillStyle = 'red';
+    pincel.fillRect(xCuadrado, yCuadrado, base, altura);
+
+
+
+    function bordeNegro(evento){
+    	var x = evento.pageX - pantalla.offsetLeft;
+    	var y = evento.pageY - pantalla.offsetTop;
+    	console.log(evento);
+    	pincel.strokeStyle = 'black';
+    	if(x > xCuadrado && x < (xCuadrado + base) && y > yCuadrado && y < (yCuadrado + altura)){
+    		pincel.strokeRect(xCuadrado, yCuadrado, base, altura);
+    	}
+    }
+
+    pantalla.onclick = bordeNegro;
+</script>
